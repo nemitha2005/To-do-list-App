@@ -235,3 +235,24 @@ input:checked ~ .bubble::after {
 	margin: 0 auto;
 	padding: 1.5rem;
 }
+
+@media (max-width: 768px) {
+	.app {
+		max-width: 100%;
+		padding: 1rem;
+	}
+	.create-todo input[type="text"] {
+		font-size: 1rem;
+		padding: 0.75rem 1rem;
+	}
+	.create-todo .options {
+		grid-template-columns: 1fr;
+		grid-gap: 0.5rem;
+	}
+	.create-todo .options label {
+		padding: 1rem;
+	}
+	.todo-item .actions button {
+		padding: 0.25rem;
+	}
+}
